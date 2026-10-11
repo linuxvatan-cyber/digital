@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetSentinel | Premium Social Growth Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #0ea5e9; --secondary: #a855f7; --accent: #f59e0b; --dark-bg: #020617; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark-bg); color: white; scroll-behavior: smooth; overflow-x: hidden; }
+        h1, h2, h3, .font-poppins { font-family: 'Poppins', sans-serif; }
+        .bg-mesh { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: radial-gradient(circle at 0% 0%, rgba(14, 165, 233, 0.15) 0%, transparent 50%), radial-gradient(circle at 100% 100%, rgba(168, 85, 247, 0.15) 0%, transparent 50%); }
+        .glass { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
+        .premium-border { transition: all 0.3s ease; }
+        .premium-border:hover { border-color: var(--primary); box-shadow: 0 0 20px rgba(14, 165, 233, 0.3); transform: translateY(-5px); }
+        .gradient-text { background: linear-gradient(90deg, #0ea5e9, #a855f7, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; }
+        .btn-premium { background: linear-gradient(45deg, var(--primary), var(--secondary)); transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4); }
+        .btn-premium:hover { filter: brightness(1.2); transform: scale(1.05); }
+        .hidden-page { display: none; }
+        .active-page { display: block; animation: fadeIn 0.6s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .growth-sphere { width: 200px; height: 200px; position: relative; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: radial-gradient(circle, rgba(14, 165, 233, 0.2) 0%, transparent 70%); }
+        .orbit-container { position: absolute; width: 100%; height: 100%; animation: rotateSphere 10s linear infinite; }
+        @keyframes rotateSphere { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .orbit-icon { position: absolute; width: 30px; height: 30px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; border: 1px solid rgba(255,255,255,0.2); animation: counterRotate 10s linear infinite; }
+        @keyframes counterRotate { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+        .icon-1 { top: 0; left: 50%; transform: translateX(-50%); color: #E1306C; }
+        .icon-2 { bottom: 0; left: 50%; transform: translateX(-50%); color: #FF0000; }
+        .icon-3 { left: 0; top: 50%; transform: translateY(-50%); color: #1DA1F2; }
+        .icon-4 { right: 0; top: 50%; transform: translateY(-50%); color: #0077B5; }
+        .growth-number { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 24px; display: block; color: #fff; text-shadow: 0 0 10px var(--primary); }
+    </style>
+</head>
+<body>
+    <div class="bg-mesh"></div>
+    <nav class="fixed top-0 w-full z-50 glass py-4 px-6 flex justify-between items-center border-b border-white/10">
+        <div class="text-2xl font-extrabold tracking-tighter gradient-text">NETSENTINEL</div>
+        <div class="space-x-6 hidden md:flex items-center">
+            <a href="#" onclick="showPage('about')" class="text-sm font-medium hover:text-sky-400 transition">Founder</a>
+            <a href="#" onclick="showPage('services')" class="text-sm font-medium hover:text-sky-400 transition">Services</a>
+            <a href="https://wa.me/917706057613" target="_blank" class="btn-premium px-5 py-2 rounded-full text-sm font-bold">Get Support</a>
+        </div>
+    </nav>
+
+    <section id="about" class="active-page pt-32 pb-20 px-6 max-w-6xl mx-auto text-center">
+        <div class="inline-block px-4 py-1 mb-6 rounded-full glass text-sky-400 text-xs font-bold tracking-widest uppercase">The Mind Behind the Machine</div>
+        <h1 class="text-6xl md:text-8xl font-extrabold mb-6 leading-tight">Meet <span class="gradient-text">@LinuxVatan</span></h1>
+        <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-3xl mx-auto leading-relaxed">A digital architect and automation expert recognized globally. LinuxVatan has engineered <span class="text-white font-semibold">NetSentinel</span> as the ultimate hub for social acceleration.</p>
+        <div class="flex flex-wrap justify-center gap-6 mb-20">
+            <button onclick="showPage('services')" class="btn-premium px-10 py-4 rounded-full font-bold text-lg">View Services <i class="fas fa-arrow-right ml-2"></i></button>
+            <a href="https://www.google.com/search?q=LinuxVatan" target="_blank" class="glass px-10 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition">Google Profile</a>
+        </div>
+        <div class="glass p-8 rounded-3xl max-w-4xl mx-auto border-white/20 flex flex-col md:flex-row items-center gap-10 text-left">
+            <div class="relative flex items-center justify-center">
+                <div class="absolute -inset-4 bg-gradient-to-r from-sky-400 to-purple-500 rounded-full blur-xl opacity-30 animate-pulse"></div>
+                <div class="growth-sphere">
+                    <div class="orbit-container">
+                        <div class="orbit-icon icon-1"><i class="fab fa-instagram"></i></div>
+                        <div class="orbit-icon icon-2"><i class="fab fa-youtube"></i></div>
+                        <div class="orbit-icon icon-3"><i class="fab fa-x-twitter"></i></div>
+                        <div class="orbit-icon icon-4"><i class="fab fa-linkedin"></i></div>
+                    </div>
+                    <div class="text-center z-10">
+                        <i class="fas fa-chart-line text-3xl text-sky-400 mb-1"></i>
+                        <span id="followerCount" class="growth-number">1,240,500</span>
+                        <span class="text-[10px] uppercase tracking-widest text-gray-400">Real-time Growth</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <h3 class="text-2xl font-bold mb-3">Founder & CEO of NetSentinel</h3>
+                <p class="text-gray-400 mb-4">Expert in API Integration and Social Algorithms. Providing high-stability engagement tools globally.</p>
+                <div class="flex gap-4">
+                    <div class="text-center"><div class="text-sky-400 font-bold text-xl">100%</div><div class="text-xs text-gray-500 uppercase">Reliable</div></div>
+                    <div class="h-10 w-px bg-gray-700"></div>
+                    <div class="text-center"><div class="text-purple-400 font-bold text-xl">24/7</div><div class="text-xs text-gray-500 uppercase">Support</div></div>
+                    <div class="h-10 w-px bg-gray-700"></div>
+                    <div class="text-center"><div class="text-amber-400 font-bold text-xl">Fast</div><div class="text-xs text-gray-500 uppercase">Delivery</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="hidden-page pt-32 pb-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-extrabold mb-4">Premium <span class="gradient-text">Engagement Hub</span></h2>
+            <p class="text-gray-400 text-lg">Select a service to trigger our AI Bot for instant ordering</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Instagram -->
+            <div class="premium-border glass p-8 rounded-3xl">
+                <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center text-pink-500 text-2xl font-bold"><i class="fab fa-instagram mr-3"></i> Instagram</div>
+                    <span class="bg-pink-500/20 text-pink-400 text-[10px] px-2 py-1 rounded uppercase font-bold">Best Seller</span>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <button onclick="orderService('Instagram Views')" class="bg-slate-800/50 hover:bg-pink-600 p-3 rounded-xl text-sm transition font-medium">Views</button>
+                    <button onclick="orderService('Instagram Likes')" class="bg-slate-800/50 hover:bg-pink-600 p-3 rounded-xl text-sm transition font-medium">Likes</button>
+                    <button onclick="orderService('Instagram Followers')" class="bg-slate-800/50 hover:bg-pink-600 p-3 rounded-xl text-sm transition font-medium">Followers</button>
+                    <button onclick="orderService('Instagram Comments')" class="bg-slate-800/50 hover:bg-pink-600 p-3 rounded-xl text-sm transition font-medium">Comments</button>
+                </div>
+            </div>
+            <!-- YouTube -->
+            <div class="premium-border glass p-8 rounded-3xl">
+                <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center text-red-500 text-2xl font-bold"><i class="fab fa-youtube mr-3"></i> YouTube</div>
+                    <span class="bg-red-500/20 text-red-400 text-[10px] px-2 py-1 rounded uppercase font-bold">High Quality</span>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <button onclick="orderService('YouTube Subscribers')" class="bg-slate-800/50 hover:bg-red-600 p-3 rounded-xl text-sm transition font-medium">Subscribers</button>
+                    <button onclick="orderService('YouTube Views')" class="bg-slate-800/50 hover:bg-red-600 p-3 rounded-xl text-sm transition font-medium">Views</button>
+                    <button onclick="orderService('YouTube Likes')" class="bg-slate-800/50 hover:bg-red-600 p-3 rounded-xl text-sm transition font-medium">Likes</button>
+                    <button onclick="orderService('YouTube Watch Time')" class="bg-slate-800/50 hover:bg-red-600 p-3 rounded-xl text-sm transition font-medium">Watch Time</button>
+                </div>
+            </div>
+            <!-- Telegram -->
+            <div class="premium-border glass p-8 rounded-3xl">
+                <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center text-sky-400 text-2xl font-bold"><i class="fab fa-telegram mr-3"></i> Telegram</div>
+                    <span class="bg-sky-500/20 text-sky-400 text-[10px] px-2 py-1 rounded uppercase font-bold">Instant</span>
+                </div>
+                <div class="grid grid-cols-1 gap-3">
+                    <button onclick="orderService('Telegram Channel Members')" class="bg-slate-800/50 hover:bg-sky-600 p-3 rounded-xl text-sm transition font-medium">Channel Members</button>
+                    <button onclick="orderService('Telegram Group Members')" class="bg-slate-800/50 hover:bg-sky-600 p-3 rounded-xl text-sm transition font-medium">Group Members</button>
+                    <button onclick="orderService('Telegram Post Views')" class="bg-slate-800/50 hover:bg-sky-600 p-3 rounded-xl text-sm transition font-medium">Post Views</button>
+                </div>
+            </div>
+            <!-- WhatsApp, X, Facebook, LinkedIn, Discord, Google (Keeping existing structure) -->
+            <div class="premium-border glass p-8 rounded-3xl"><div class="flex items-center text-green-500 text-2xl font-bold mb-6"><i class="fab fa-whatsapp mr-3"></i> WhatsApp</div><div class="grid grid-cols-2 gap-3"><button onclick="orderService('WhatsApp Members')" class="bg-slate-800/50 hover:bg-green-600 p-3 rounded-xl text-sm transition">Members</button><button onclick="orderService('WhatsApp Boost')" class="bg-slate-800/50 hover:bg-green-600 p-3 rounded-xl text-sm transition">Boost</button></div></div>
+            <div class="premium-border glass p-8 rounded-3xl"><div class="flex items-center text-white text-2xl font-bold mb-6"><i class="fab fa-x-twitter mr-3"></i> X (Twitter)</div><div class="grid grid-cols-2 gap-3"><button onclick="orderService('X Followers')" class="bg-slate-800/50 hover:bg-gray-600 p-3 rounded-xl text-sm transition">Followers</button><button onclick="orderService('X Likes')" class="bg-slate-800/50 hover:bg-gray-600 p-3 rounded-xl text-sm transition">Likes</button></div></div>
+            <div class="premium-border glass p-8 rounded-3xl"><div class="flex items-center text-blue-600 text-2xl font-bold mb-6"><i class="fab fa-facebook mr-3"></i> Facebook</div><div class="grid grid-cols-2 gap-3"><button onclick="orderService('FB Page Likes')" class="bg-slate-800/50 hover:bg-blue-700 p-3 rounded-xl text-sm transition">Page Likes</button><button onclick="orderService('FB Followers')" class="bg-slate-800/50 hover:bg-blue-700 p-3 rounded-xl text-sm transition">Followers</button></div></div>
+        </div>
+    </section>
+
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
+        <div id="helpBot" class="hidden glass w-80 h-96 rounded-3xl flex flex-col overflow-hidden shadow-2xl mb-4 border-sky-500/50">
+            <div class="bg-gradient-to-r from-sky-600 to-purple-600 p-4 font-bold flex justify-between items-center">
+                <span class="flex items-center"><i class="fas fa-robot mr-2"></i> NetSentinel AI</span>
+                <button onclick="toggleBot()" class="text-white/80 hover:text-white">×</button>
+            </div>
+            <div class="flex-1 p-4 overflow-y-auto text-sm space-y-4" id="botChat"></div>
+            <div id="typingIndicator" class="hidden px-4 py-1 text-xs text-gray-400 italic">AI is typing...</div>
+            <div class="p-3 border-t border-white/10 flex gap-2">
+                <input id="botInput" type="text" placeholder="Ask me anything..." class="bg-slate-900 flex-1 px-4 py-2 rounded-full outline-none text-sm border border-white/10 focus:border-sky-500">
+                <button onclick="sendBotMsg()" class="bg-sky-500 w-10 h-10 rounded-full flex items-center justify-center hover:bg-sky-600 transition"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <a href="https://wa.me/917706057613" target="_blank" class="bg-green-500 w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:scale-110 transition-transform"><i class="fab fa-whatsapp"></i></a>
+        <button onclick="toggleBot()" class="btn-premium w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:scale-110 transition-transform"><i class="fas fa-robot"></i></button>
+    </div>
+
+    <footer class="py-12 text-center text-gray-500 text-sm border-t border-white/5">
+        <div class="mb-4 text-lg font-bold gradient-text">NETSENTINEL</div>
+        <div class="flex justify-center gap-4 mb-4">
+            <a href="#" class="hover:text-white underline">Terms of Service</a>
+            <a href="#" class="hover:text-white underline">Privacy Policy</a>
+            <a href="#" class="hover:text-white underline">Compliance</a>
+        </div>
+        <p>&copy; 2023 All Rights Reserved | Owned by <span class="text-white">@LinuxVatan</span></p>
+        <p class="text-[10px] mt-2 px-6 opacity-50">Disclaimer: We provide social media engagement tools. Users are responsible for complying with platform terms of service.</p>
+    </footer>
+
+    <script>
+        // --- Security: HTML Sanitization ---
+        function escapeHTML(str) {
+            return str.replace(/[&<>"']/g, function(m) {
+                return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m];
+            });
+        }
+
+        // --- Professional Counter (Incremental Growth) ---
+        let currentCount = 1240500;
+        function updateCounter() {
+            currentCount += Math.floor(Math.random() * 5) + 1;
+            document.getElementById("followerCount").innerText = currentCount.toLocaleString();
+            setTimeout(updateCounter, Math.random() * 3000 + 1000);
+        }
+        window.onload = () => { 
+            updateCounter(); 
+            loadChatHistory();
+        };
+
+        function showPage(pageId) {
+            document.getElementById('about').classList.add('hidden-page');
+            document.getElementById('about').classList.remove('active-page');
+            document.getElementById('services').classList.add('hidden-page');
+            document.getElementById('services').classList.remove('active-page');
+            document.getElementById(pageId).classList.remove('hidden-page');
+            document.getElementById(pageId).classList.add('active-page');
+            window.scrollTo(0,0);
+        }
+
+        function orderService(serviceName) {
+            window.open(`https://t.me/NetSentinelSM_bot?start=${encodeURIComponent(serviceName)}`, '_blank');
+        }
+
+        function toggleBot() { document.getElementById('helpBot').classList.toggle('hidden'); }
+
+        // --- Bot Persistence & Logic ---
+        function loadChatHistory() {
+            const history = JSON.parse(localStorage.getItem('netSentinelChat')) || [];
+            const chat = document.getElementById('botChat');
+            if (history.length === 0) {
+                addMessage("bot", "Welcome! I am the NetSentinel AI. How can I help you grow today?");
+            } else {
+                history.forEach(msg => addMessage(msg.type, msg.text, false));
+            }
+        }
+
+        function addMessage(type, text, save = true) {
+            const chat = document.getElementById('botChat');
+            const div = document.createElement('div');
+            div.className = type === 'user' 
+                ? "bg-sky-600 p-3 rounded-2xl rounded-tr-none self-end ml-auto w-3/4 text-right" 
+                : "bg-slate-800 p-3 rounded-2xl rounded-tl-none self-start w-3/4 border border-white/10";
+            div.innerText = text;
+            chat.appendChild(div);
+            chat.scrollTop = chat.scrollHeight;
+
+            if (save) {
+                const history = JSON.parse(localStorage.getItem('netSentinelChat')) || [];
+                history.push({ type, text });
+                localStorage.setItem('netSentinelChat', JSON.stringify(history));
+            }
+        }
+
+        function sendBotMsg() {
+            const input = document.getElementById('botInput');
+            const text = input.value.trim();
+            if (!text) return;
+
+            addMessage('user', text);
+            input.value = "";
+
+            const typing = document.getElementById('typingIndicator');
+            typing.classList.remove('hidden');
+
+            setTimeout(() => {
+                typing.classList.add('hidden');
+                const userText = text.toLowerCase();
+                let response = "I'm not sure about that. Please contact @LinuxVatan or WhatsApp support at +91 7706057613.";
+                if(userText.includes("price")) response = "Our pricing is highly competitive! Check the Telegram Bot for the latest price list.";
+                if(userText.includes("payment")) response = "We support secure payment gateways. Details are available inside the bot.";
+                if(userText.includes("time")) response = "Most services start instantly and complete within 24 hours!";
+                addMessage('bot', response);
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
+
+
